@@ -8,10 +8,10 @@ gulp.task('less', function() {
           .pipe(less({
             compress: true
           }))
-          .on('error', function(err) {
-            console.log(err);
+          .on('error', function(error) {
+            console.log('less error:' + error);
           })
-          .pipe(gulp.dest('./src/less'));
+          .pipe(gulp.dest('./dist/css'));
 
 });
 

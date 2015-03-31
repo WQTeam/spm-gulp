@@ -10,7 +10,7 @@
       "backbone": "1.1.2",
       "zepto": "1.1.3"
     },
-    "buildArgs": "--include standalone"
+    "buildArgs": "--include standalone --ignore jquery,backbone,underscore --global jquery:jQuery,backbone:Backbone,underscore:underscore"
   },
 
   "dependencies": {

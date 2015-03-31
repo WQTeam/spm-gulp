@@ -20,4 +20,7 @@ echo "project deploy success!"
 
 echo "publish success!"
 
+#gulp
+gulp
 
+echo "gulp success!"

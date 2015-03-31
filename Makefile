@@ -10,3 +10,7 @@ deploy:
 	@cp -R ./dist/src/** ./dist/
 	@rm -R ./dist/src
 	@echo "deploy success!"	
+
+gulp:
+	@gulp
+	@echo "gulp success!"
