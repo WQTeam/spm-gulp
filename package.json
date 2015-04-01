@@ -12,9 +12,9 @@
     },
     "buildArgs": "--include standalone --ignore jquery,backbone,underscore --global jquery:jQuery,backbone:Backbone,underscore:underscore"
   },
-
   "dependencies": {
     "gulp": "^3.8.11",
-    "gulp-less": "^3.0.2"
+    "gulp-less": "^3.0.2",
+    "walk": "^2.3.9"
   }
 }
