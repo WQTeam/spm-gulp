@@ -20,6 +20,11 @@ echo "project deploy success!"
 
 echo "publish success!"
 
+#less
+cp src/less/variables/config-deploy.less src/less/variables/config.less
+
+echo "less config change to deploy success!"
+
 #gulp
 gulp
 
@@ -29,3 +34,8 @@ echo "gulp success!"
 node transport.js
 
 echo "transport success!"
+
+#revert
+cp src/less/variables/config-debug.less src/less/variables/config.less
+
+echo "less config revert success!"

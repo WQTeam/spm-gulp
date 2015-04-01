@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var image = require('gulp-image');
+//var image = require('gulp-image');
 
 gulp.task('less', function() {
   
@@ -16,17 +16,17 @@ gulp.task('less', function() {
 
 });
 
-gulp.task('image', function() {
+//gulp.task('image', function() {
 
-	return gulp
-			.src('./src/image/**/*')
-			.pipe(image())
-			.on('error', function(error) {
-				console.log('image error: ' + error);
-			})
-			.pipe(gulp.dest('./dist/image'))
+//	return gulp
+//			.src('./src/image/**/*')
+//			.pipe(image())
+//			.on('error', function(error) {
+//				console.log('image error: ' + error);
+//			})
+//			.pipe(gulp.dest('./dist/image'))
 
-});
+//});
 
-gulp.task('default', ['less', 'image']);
+gulp.task('default', ['less']);
 
