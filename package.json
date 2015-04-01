@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "gulp": "^3.8.11",
+    "gulp-image": "^0.5.7",
     "gulp-less": "^3.0.2",
     "walk": "^2.3.9"
   }

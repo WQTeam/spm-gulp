@@ -642,7 +642,7 @@
     <h2 id="upgrading">Upgrading to 1.1</h2>
 
     <p>
-      Backbone <b>1.1</b> should be a fairly painless upgrade from the <b>0.9.X</b>
+      Backbone <b>1.1</b> should be a fairly pai.css upgrade from the <b>0.9.X</b>
       series. If you're upgrading from an older version, be sure to check out the
       <a href="#changelog">change log</a>. In brief, a few of the larger breaking
       changes are:
@@ -672,7 +672,7 @@
       <li>
         Model validation is now only enforced by default in
         <a href="#Model-save">save</a> &mdash; not in
-        <a href="#Model-set">set</a> unless the <tt>{validate:true}</tt>
+        <a href="#Model-set">set</a> u.css the <tt>{validate:true}</tt>
         option is passed. Model validation now fires an <tt>"invalid"</tt> event instead of
         <tt>"error"</tt>.
       </li>
@@ -1081,13 +1081,13 @@ if (note.has("title")) {
       <b class="header">unset</b><code>model.unset(attribute, [options])</code>
       <br />
       Remove an attribute by deleting it from the internal attributes hash.
-      Fires a <tt>"change"</tt> event unless <tt>silent</tt> is passed as an option.
+      Fires a <tt>"change"</tt> event u.css <tt>silent</tt> is passed as an option.
     </p>
 
     <p id="Model-clear">
       <b class="header">clear</b><code>model.clear([options])</code>
       <br />
-      Removes all attributes from the model, including the <tt>id</tt> attribute. Fires a <tt>"change"</tt> event unless
+      Removes all attributes from the model, including the <tt>id</tt> attribute. Fires a <tt>"change"</tt> event u.css
       <tt>silent</tt> is passed as an option.
     </p>
 
@@ -1485,7 +1485,7 @@ alert(solaris.url());
       If you're working with a Rails backend that has a version prior to 3.1,
       you'll notice that its default <tt>to_json</tt> implementation includes
       a model's attributes under a namespace. To disable this behavior for
-      seamless Backbone integration, set:
+      sea.css Backbone integration, set:
     </p>
 
 <pre>
@@ -1750,7 +1750,7 @@ var alphabetical = books.sortBy(function(book) {
       Returns the added (or preexisting, if duplicate) models.
       Pass <tt>{at: index}</tt> to splice the model into the collection at the
       specified <tt>index</tt>. If you're adding models to the collection that are
-      <i>already</i> in the collection, they'll be ignored, unless you pass
+      <i>already</i> in the collection, they'll be ignored, u.css you pass
       <tt>{merge: true}</tt>, in which case their attributes will be merged
       into the corresponding models, firing any appropriate <tt>"change"</tt> events.
     </p>
@@ -2061,7 +2061,7 @@ var Tweets = Backbone.Collection.extend({
       The <b>options</b> hash takes <tt>success</tt> and <tt>error</tt> callbacks
       which will both be passed <tt>(collection, response, options)</tt> as arguments.
       When the model data returns from the server, it uses <a href="#Collection-set">set</a>
-      to (intelligently) merge the fetched models, unless you pass <tt>{reset: true}</tt>,
+      to (intelligently) merge the fetched models, u.css you pass <tt>{reset: true}</tt>,
       in which case the collection will be (efficiently) <a href="#Collection-reset">reset</a>.
       Delegates to <a href="#Sync">Backbone.sync</a>
       under the covers for custom persistence strategies and returns a
@@ -2859,7 +2859,7 @@ var model = localBackbone.Model.extend(...);
       </li>
       <li>
         It's smaller. There are fewer kilobytes for your browser or phone to download,
-        and less <i>conceptual</i> surface area. You can read and understand
+        and.css <i>conceptual</i> surface area. You can read and understand
         the source in an afternoon.
       </li>
       <li>
@@ -3155,7 +3155,7 @@ Inbox.messages.add(newMessage);
       Backbone.js was originally extracted from
       <a href="http://www.documentcloud.org">a Rails application</a>; getting
       your client-side (Backbone) Models to sync correctly with your server-side
-      (Rails) Models is painless, but there are still a few things to be aware of.
+      (Rails) Models is pai.css, but there are still a few things to be aware of.
     </p>
 
     <p>
@@ -3306,7 +3306,7 @@ ActiveRecord::Base.include_root_in_json = false
       conditions on an interactive animated globe, and Backbone provides the 
       foundation upon which all of the site's components are built. Despite the 
       presence of several other javascript libraries, Backbone's non-opinionated 
-      design made it effortless to mix-in the <a href="#Events">Events</a> functionality used for 
+      design made it effor.css to mix-in the <a href="#Events">Events</a> functionality used for 
       distributing state changes throughout the page. When the decision was made 
       to switch to Backbone, large blocks of custom logic simply disappeared.
     </p>
@@ -4150,7 +4150,7 @@ ActiveRecord::Base.include_root_in_json = false
       <li>
         Model validation is now only enforced by default in
         <tt>Model#save</tt> and no longer enforced by default upon
-        construction or in <tt>Model#set</tt>, unless the <tt>{validate:true}</tt>
+        construction or in <tt>Model#set</tt>, u.css the <tt>{validate:true}</tt>
         option is passed.
       </li>
       <li>
@@ -4236,7 +4236,7 @@ ActiveRecord::Base.include_root_in_json = false
       </li>
       <li>
         Consolidated <tt>"sync"</tt> and <tt>"error"</tt> events within
-        <a href="#Sync">Backbone.sync</a>. They are now triggered regardless
+        <a href="#Sync">Backbone.sync</a>. They are now triggered regar.css
         of the existence of <tt>success</tt> or <tt>error</tt> callbacks.
       </li>
       <li>
@@ -4554,7 +4554,7 @@ ActiveRecord::Base.include_root_in_json = false
       encoded requests.
       Added <a href="#Model-clear">Model#clear</a>, which removes all attributes
       from a model.
-      All Backbone classes may now be seamlessly inherited by CoffeeScript classes.
+      All Backbone classes may now be sea.cssly inherited by CoffeeScript classes.
     </p>
 
     <p>

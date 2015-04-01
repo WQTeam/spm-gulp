@@ -26,7 +26,7 @@ function getFile(path) {
 		if (err) {
 			return console.log('read file error: ' + err);
 		}
-		var result = data.replace(/quimg.com\/src/g, 'quimg.com/dist').replace(/\/less\//g, '/css/').replace(/(\w*)(.less)/g, '$1.css');
+		var result = data.replace(/quimg.com\/src/g, 'quimg.com/dist').replace(/\/less\//g, '/css/').replace(/(\w*)(.less)/g, '$1.css').replace(/\?nowrap/g, '');
 		fs.writeFile(path, result, 'utf-8', function(err) {
 			if (err) {
 				console.log('write file error: ' + err);

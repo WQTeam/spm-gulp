@@ -25,4 +25,7 @@ gulp
 
 echo "gulp success!"
 
+#transport
+node transport.js
 
+echo "transport success!"
